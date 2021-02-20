@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/grosbeak)](https://CRAN.R-project.org/package=grosbeak)
+[![R-CMD-check](https://github.com/zkamvar/grosbeak/workflows/R-CMD-check/badge.svg)](https://github.com/zkamvar/grosbeak/actions)
 <!-- badges: end -->
 
 This is a toy it is not alive.
