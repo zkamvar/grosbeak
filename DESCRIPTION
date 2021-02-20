@@ -1,5 +1,5 @@
-Package: renest
-Title: Apply data to a nested template
+Package: grosbeak
+Title: Use a nested template for your data
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Zhian N.",
@@ -7,8 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "zkamvar@gmail.com",
            comment = c(ORCID = "0000-0003-1458-7108"))
-Description: Take a nested template (e.g. JSON or YAML) and apply flat data to
-  that template. This is largely a toy package. 
+Description: The Black Headed Grosbeak is known to steal materials from other bird nests to make its own (Stoner, 1947) <https://sora.unm.edu/node/19220>. Here, we take a nested template (e.g. JSON or YAML) and apply flat data to that template. Bird lovers, miss me with your commentary.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0),

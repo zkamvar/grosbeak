@@ -1,4 +1,4 @@
 library(testthat)
-library(renest)
+library(grosbeak)
 
-test_check("renest")
+test_check("grosbeak")

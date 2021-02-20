@@ -13,30 +13,30 @@ knitr::opts_chunk$set(
 )
 ```
 
-# renest
+# grosbeak
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/renest)](https://CRAN.R-project.org/package=renest)
+[![CRAN status](https://www.r-pkg.org/badges/version/grosbeak)](https://CRAN.R-project.org/package=grosbeak)
 <!-- badges: end -->
 
 This is a toy it is not alive.
 
 ## Example
 
-renest fills in a data template with values. Take for example this simple JSON
+grosbeak fills in a data template with values. Take for example this simple JSON
 template with numeric indices:
 
 ```{r example}
 library("jsonlite")
-template <- read_json(system.file("extdata", "template1.json", package = "renest"))
+template <- read_json(system.file("extdata", "template1.json", package = "grosbeak"))
 toJSON(template, auto_unbox = TRUE)
 ```
 
-With `renest()`, we can take some values and fill that template:
+With `make_nest()`, we can take some values and fill that template:
 
 ```{r example2}
 values <- paste0("Payload#", 0:6)
-toJSON(renest(values, template, prefix = "Payload#"), auto_unbox = TRUE)
+toJSON(make_nest(values, template, prefix = "Payload#"), auto_unbox = TRUE)
 ```
 

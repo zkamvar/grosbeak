@@ -12,13 +12,13 @@
 #' @examples
 #' if (requireNamespace("jsonlite")) {
 #'   # You can use JSON data
-#'   template <- jsonlite::read_json(system.file("extdata", "template1.json", package = "renest"))
+#'   template <- jsonlite::read_json(system.file("extdata", "template1.json", package = "grosbeak"))
 #' } else {
 #'   template <- list(list(c(1, 2), c(3, 4), 5))
 #' }
 #' payload  <- paste0("Payload#", 0:6)
-#' renest(payload, template, prefix = "Payload#") 
-renest <- function(x, template, prefix = "") {
+#' make_nest(payload, template, prefix = "Payload#") 
+make_nest <- function(x, template, prefix = "") {
   stopifnot(
     "x must be a character vector" = (length(x) && is.character(x)),
     "template must be a list" = (is.list(template))
