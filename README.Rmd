@@ -37,6 +37,7 @@ toJSON(template, auto_unbox = TRUE)
 With `make_nest()`, we can take some values and fill that template:
 
 ```{r example2}
+library("grosbeak")
 values <- paste0("Payload#", 0:6)
 toJSON(make_nest(values, template, prefix = "Payload#"), auto_unbox = TRUE)
 ```
