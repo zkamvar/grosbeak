@@ -7,7 +7,7 @@ output: github_document
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
+  comment = "#|",
   fig.path = "man/figures/README-",
   out.width = "100%"
 )
@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/zkamvar/grosbeak/workflows/R-CMD-check/badge.svg)](https://github.com/zkamvar/grosbeak/actions)
 <!-- badges: end -->
 
-This is a toy it is not alive.
+This is a toy it is not alive. I made this package after I added a solution to the [Nested Templated Data entry in Rosetta Code](https://rosettacode.org/wiki/Nested_templated_data#R)
 
 ## Example
 
