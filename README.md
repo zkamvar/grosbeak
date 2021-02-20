@@ -11,7 +11,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/grosbeak)](https://CRAN.R-project.org/package=grosbeak)
 <!-- badges: end -->
 
-This is a toy it is not alive.
+This is a toy it is not alive. I made this package after I added a solution to the [Nested Templated Data entry in Rosetta Code](https://rosettacode.org/wiki/Nested_templated_data#R)
 
 ## Example
 
