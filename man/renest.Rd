@@ -19,15 +19,17 @@ the template filled with the matching keys in x
 \description{
 Nest flat data given a template.
 }
-\references{
+\details{
+This is a toy implementation of Nested Template Data:
 \url{https://rosettacode.org/wiki/Nested_templated_data#R}
-
-if (requireNamespace("jsonlite")) {You can use JSON data
-
-template <- read_json(system.file("extdata", "example1.json"))
+}
+\examples{
+if (requireNamespace("jsonlite")) {
+  # You can use JSON data
+  template <- jsonlite::read_json(system.file("extdata", "template1.json", package = "renest"))
 } else {
-template <- list(list(c(1, 2), c(3, 4), 5))
+  template <- list(list(c(1, 2), c(3, 4), 5))
 }
 payload  <- paste0("Payload#", 0:6)
-renest(payload, template, prefix = "Payload#")
+renest(payload, template, prefix = "Payload#") 
 }

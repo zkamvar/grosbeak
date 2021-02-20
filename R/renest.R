@@ -6,13 +6,13 @@
 #'
 #' @return the template filled with the matching keys in x
 #' @export
-#' @examples
-#' @references
+#' @details This is a toy implementation of Nested Template Data:
 #' <https://rosettacode.org/wiki/Nested_templated_data#R>
 #'
+#' @examples
 #' if (requireNamespace("jsonlite")) {
 #'   # You can use JSON data
-#'   template <- read_json(system.file("extdata", "example1.json"))
+#'   template <- jsonlite::read_json(system.file("extdata", "template1.json", package = "renest"))
 #' } else {
 #'   template <- list(list(c(1, 2), c(3, 4), 5))
 #' }
